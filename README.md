@@ -13,6 +13,7 @@ your-password
 EOF
 
 git clone --depth 1 https://github.com/maxleungtszchun/NordVPN-MacCLI.git
+# you must use zsh for sourcing this script
 source ./NordVPN-MacCLI/nordvpn.sh
 
 # the script automatically selects the best server of the country specified
