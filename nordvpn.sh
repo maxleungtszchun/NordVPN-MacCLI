@@ -1,9 +1,8 @@
 #!/usr/bin/env zsh
 
-function print_error { printf '%b' "\e[31m${1}\e[0m\n" >&2; }
-function print_green { printf '%b' "\e[32m${1}\e[0m\n" 2>&1; }
-function check_command { command -v "$1" &>/dev/null; }
-
+function print_error { printf '%b' "\e[31m${1}\e[0m\n" >&2 }
+function print_green { printf '%b' "\e[32m${1}\e[0m\n" 2>&1 }
+function check_command { command -v "$1" &>/dev/null }
 function public_ip { printf '%b' "$(curl -s ipinfo.io)\n" }
 
 function get_nordvpn_server {
